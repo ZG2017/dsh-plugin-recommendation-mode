@@ -47,7 +47,7 @@ No recommendation/shopping/travel-planning plugin currently exists in the DSH sh
 ## Install
 
 ```sh
-dsh plugin --profile web add @gz2016/dsh-plugin-recommendation-mode
+dsh plugin --profile web add github:ZG2017/dsh-plugin-recommendation-mode
 ```
 
 The plugin supplies its own persona (no persona text to copy or hand-assemble), but DSH still needs a concrete preset **directory** to select in the picker - presets are directory-discovered, not plugin-registered, so there's no code hook for a plugin to create one for you. This package ships a ready-to-use one (also setting `tool-web`'s `fetch: true`, since DSH defaults that to `false` and workers need real page content, not just search snippets) - copy it into your preset root and restart:
